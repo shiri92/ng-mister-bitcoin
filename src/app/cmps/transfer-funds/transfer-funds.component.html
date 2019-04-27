@@ -1,0 +1,8 @@
+<div class="transfer-funds-component">
+  <p>Transfer coins to {{contact.name}}:</p>
+  <div>
+    <label>Amount:&nbsp;</label>
+    <input (input)="setAmount($event)" type="number" />
+    <button (click)="handleTransfer()">Transfer</button>
+  </div>
+</div>

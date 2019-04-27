@@ -1,0 +1,10 @@
+<div>
+  <form (submit)="onSubmit()">
+    <h3>Please enter your name:</h3>
+    <br />
+    <input (onchange)="this.setName" name="userName" [(ngModel)]="userName" type="text" />
+    <br />
+    <br />
+    <button>Sign up</button>
+  </form>
+</div>

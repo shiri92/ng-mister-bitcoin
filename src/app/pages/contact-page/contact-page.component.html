@@ -1,0 +1,7 @@
+<div class="contact-page-component">
+  <div class="top-container">
+    <img (click)="onAdd()" src="../../../assets/img/add.png" alt="Add">
+    <app-contact-filter></app-contact-filter>
+  </div>
+  <app-contact-list (delete)="onDelete($event)" [contacts]="contacts"></app-contact-list>
+</div>

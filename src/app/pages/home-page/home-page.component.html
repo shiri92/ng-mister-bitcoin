@@ -1,0 +1,6 @@
+<div class="home-component" *ngIf="loggedUser && bitRate">
+  <h1>Hello {{loggedUser.name}}!</h1>
+  <h2>Coins: {{loggedUser.coins}}</h2>
+  <h2>BTC: {{bitRate}}</h2>
+  <app-moves-list [user]="loggedUser"></app-moves-list>
+</div>

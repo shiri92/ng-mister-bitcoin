@@ -1,0 +1,6 @@
+<div class="contact-list-component">
+  <li *ngFor="let contact of contacts" name="contact.name">
+    <app-contact-preview (click)="moveToDetails(contact._id)" (delete)="handleDelete(contact)" [contact]="contact">
+    </app-contact-preview>
+  </li>
+</div>

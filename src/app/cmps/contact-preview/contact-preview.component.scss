@@ -1,0 +1,19 @@
+.contact-preview-component {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(231, 225, 225);
+  margin: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  .icons-container {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.transfer-funds-component {
+  background-color: rgb(72, 150, 240);
+  padding: 20px;
+  border-radius: 5px;
+  margin: 30px 10px 0 10px;
+  p {
+    margin-bottom: 20px;
+  }
+  div {
+    input {
+      outline: 0;
+      border-width: 0 0 2px;
+      background-color: rgb(72, 150, 240);
+    }
+    button {
+      padding: 3px;
+      margin: 5px;
+    }
+  }
+}

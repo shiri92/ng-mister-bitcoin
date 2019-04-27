@@ -1,0 +1,16 @@
+<div class="contact-edit-component">
+  <h1>{{contact._id ? 'Edit' : 'Add'}}</h1>
+  <form (submit)="onSubmit()">
+    <label>Name: &nbsp;</label>
+    <input [(ngModel)]="contact.name" name="contact.name" type="text" placeholder="Name..." />
+    <br />
+    <label>Phone: &nbsp;</label>
+    <input [(ngModel)]="contact.phone" name="contact.phone" type="text" placeholder="Phone..." />
+    <br />
+    <label>Email: &nbsp;</label>
+    <input [(ngModel)]="contact.email" name="contact.email" type="text" placeholder="Email..." />
+    <br />
+
+    <button>Save</button>
+  </form>
+</div>

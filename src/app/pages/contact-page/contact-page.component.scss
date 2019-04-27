@@ -1,0 +1,12 @@
+.contact-page-component {
+  max-width: 500px;
+  margin: 0 auto;
+  .top-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      cursor: pointer;
+    }
+  }
+}

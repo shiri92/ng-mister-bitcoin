@@ -1,0 +1,8 @@
+<div class="contact-preview-component">
+  <img src="{{imgUrl}}" alt="img" />
+  <div>{{contact.name}}</div>
+  <div class="icons-container">
+    <img (click)="onEdit(contact)" src='../../../assets/img/edit.png' alt="Edit" />
+    <img (click)="handleDelete(contact, $event)" src='../../../assets/img/trash.png' alt="Delete" />
+  </div>
+</div>

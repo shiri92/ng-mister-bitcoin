@@ -1,0 +1,15 @@
+<div class="contact-details-component">
+  <div class="btns-container">
+    <img (click)="router.navigate(['contact'])" src="../../../assets/img/arrow-left.png" alt="Back" />
+    <img (click)="onEdit(contact)" src="../../../assets/img/edit.png" alt="Edit" />
+    <img (click)="onDelete(contact)" src='../../../assets/img/trash.png' alt="Delete" />
+  </div>
+  <div class="contact-details">
+    <img src="{{imgUrl}}" alt="img" />
+    <div>Name: {{contact.name}}</div>
+    <div>Email: {{contact.email}}</div>
+    <div>Phone: {{contact.phone}}</div>
+  </div>
+  <app-transfer-funds [contact]="contact" (transfer)="onTransfer($event)"></app-transfer-funds>
+  <app-moves-list *ngIf="user" [user]="user" [contact]="contact"></app-moves-list>
+</div>

@@ -1,0 +1,19 @@
+<div class="moves-list-component">
+  <h1>Your moves:</h1>
+  <hr />
+  <div *ngIf="contact">
+    <div *ngFor="let move of moves">
+      <p>At: {{move.createdAt | amDateFormat:'DD/MM/YYYY HH:MM A'}}</p>
+      <p>Amount: {{move.amount}} coins</p>
+    </div>
+  </div>
+
+  <div *ngIf="!contact">
+    <div *ngFor="let move of user.moves">
+      <p>To: {{move.to}}</p>
+      <p>At: {{move.createdAt | amDateFormat:'DD/MM/YYYY HH:MM A'}}</p>
+      <p>Amount: {{move.amount}} coins</p>
+    </div>
+  </div>
+  <hr />
+</div>
